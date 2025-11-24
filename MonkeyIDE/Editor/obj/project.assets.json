@@ -1,0 +1,129 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "Antlr4.Runtime.Standard/4.13.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Monkey.Frontend/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Antlr4.Runtime.Standard": "4.13.1"
+        },
+        "compile": {
+          "bin/placeholder/Monkey.Frontend.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Monkey.Frontend.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Antlr4.Runtime.Standard/4.13.1": {
+      "sha512": "Da5+i4kFHUseJRZGcBG5fmZGpA/Ns180ibrQMxgZzjpQOnENVvSL5gi5HZ8Ncz8/AR2WsKbOg2lMBzjz0HUQcA==",
+      "type": "package",
+      "path": "antlr4.runtime.standard/4.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr4.runtime.standard.4.13.1.nupkg.sha512",
+        "antlr4.runtime.standard.nuspec",
+        "lib/net45/Antlr4.Runtime.Standard.dll",
+        "lib/net45/Antlr4.Runtime.Standard.xml",
+        "lib/netstandard2.0/Antlr4.Runtime.Standard.dll",
+        "lib/netstandard2.0/Antlr4.Runtime.Standard.xml"
+      ]
+    },
+    "Monkey.Frontend/1.0.0": {
+      "type": "project",
+      "path": "../../MonkeyCompiler/Monkey.Frontend/Monkey.Frontend.csproj",
+      "msbuildProject": "../../MonkeyCompiler/Monkey.Frontend/Monkey.Frontend.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "Monkey.Frontend >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\isai\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\isai\\RiderProjects\\ReflectionTest1\\MonkeyIDE\\Editor\\Editor.csproj",
+      "projectName": "Editor",
+      "projectPath": "C:\\Users\\isai\\RiderProjects\\ReflectionTest1\\MonkeyIDE\\Editor\\Editor.csproj",
+      "packagesPath": "C:\\Users\\isai\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\isai\\RiderProjects\\ReflectionTest1\\MonkeyIDE\\Editor\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\isai\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {
+            "C:\\Users\\isai\\RiderProjects\\ReflectionTest1\\MonkeyCompiler\\Monkey.Frontend\\Monkey.Frontend.csproj": {
+              "projectPath": "C:\\Users\\isai\\RiderProjects\\ReflectionTest1\\MonkeyCompiler\\Monkey.Frontend\\Monkey.Frontend.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Users\\isai\\.dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
